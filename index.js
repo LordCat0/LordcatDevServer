@@ -1,7 +1,7 @@
 const ws = require('ws')
 const fs = require('fs')
 const PORT = process.env.PORT || 3000
-const server = new ws.Server({ port: PORT, host: '0.0.0.0' })
+const server = new ws.Server({ port: PORT, host: '::' })
 
 function saveData(key, value) {
   let data = {};
